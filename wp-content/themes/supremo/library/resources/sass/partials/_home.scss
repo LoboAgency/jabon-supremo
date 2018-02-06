@@ -1,0 +1,431 @@
+#home {
+    #hogar {
+        background: $white;
+        padding-top: 62px;
+        position: relative;
+
+        .bg {
+            background: url('#{$bg}bg-flowers.png') center repeat fixed 100%;
+            text-align: center;
+            margin: 0 auto;
+            width: 90%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .home-content {
+            background: rgba(138,232,255,1);
+            background: -moz-linear-gradient(left, rgba(138,232,255,1) 0%, rgba(48,192,228,1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(138,232,255,1)), color-stop(100%, rgba(48,192,228,1)));
+            background: -webkit-linear-gradient(left, rgba(138,232,255,1) 0%, rgba(48,192,228,1) 100%);
+            background: -o-linear-gradient(left, rgba(138,232,255,1) 0%, rgba(48,192,228,1) 100%);
+            background: -ms-linear-gradient(left, rgba(138,232,255,1) 0%, rgba(48,192,228,1) 100%);
+            background: linear-gradient(to right, rgba(138,232,255,1) 0%, rgba(48,192,228,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ae8ff', endColorstr='#30c0e4', GradientType=1 );
+            padding: 28px 0;
+            position: relative;
+
+            .home-dats {
+                margin: 0 auto;
+                padding-top: 50px;
+
+                ul {
+                    margin: 25px 0 0 10px;
+
+                    padding: 0;
+
+                    li {
+                        display: inline-block;
+                        margin: 0 20px;
+                        padding: 0;
+
+                        a,
+                        .more {
+                            @include fonts( $white, $medium, 18 );
+                            cursor: pointer;
+                            font-size: 18px;
+
+                            img {
+                                width: 30px;
+                            }
+                        }
+                    }
+                }
+
+                .description {
+                    @include fonts( $white, $light, 18px );
+                    font-size: 18px;
+                    margin: 30px 0 0 30px;
+                    text-align: justify;
+                    width: 70%;
+                }
+
+                .note {
+                    @include fonts( $white, $light, 17 );
+                    background-color: #7f388d;
+                    bottom: -29%;
+                    height: auto;
+                    font-size: 16px;
+                    padding: 15px;
+                    position: absolute;
+                    right: -15px;
+                    width: 90%;
+                }
+
+                .title {
+                    @include fonts( $white, $light, 59 );
+                    font-size: 59px;
+                    line-height: 47px;
+
+                    small  {
+                        font-size: 35px;
+
+                        strong {
+                            font-size: 35px;
+                        }
+                    }
+
+                    strong { @include fonts( $white, $medium, 75 ); font-size: 75px; }
+                }
+            }
+
+            .img {
+                text-align: center;
+                img { margin: 0 auto; width: 85%; }
+            }
+        }
+
+        .ico { position: absolute; z-index: 999; transition: all .2s cubic-bezier(0, 0, 0.43, 0.88); }
+    }
+
+    #mujeres {
+        margin-bottom: 74px;
+        padding-top: 40px;
+        
+        .galery {
+            .images {
+                .img-galery{
+                    background-size: cover !important;
+                    height: 465px;
+                    width: 100%;
+                }
+
+                .img-ppal {
+                    background-size: cover !important;
+                    height: 620px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .mujeres-title {
+            background: #7683ff;
+            height: 200px;
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+
+            h2 {
+                @include fonts( $white, $light, 60px );
+                font-size: 60px;
+                letter-spacing: 4px;
+                position: relative;
+                top: 75px;
+
+                strong { @include fonts( $white, $regular, 60px ); font-size: 60px; }
+            }
+        }
+
+        .video {
+            margin: 126px auto 0;
+            text-align: center;
+            width: 91%;
+
+            video {
+                margin: 0 auto;
+                height: auto;
+                width: 80%;
+            }
+        }
+    }
+
+    #productos {
+        position: relative;
+        .ico { position: absolute; z-index: 999; transition: all .2s cubic-bezier(0, 0, 0.43, 0.88); }
+
+        .product {
+            height: 315px;
+            margin-top: 100px;
+            position: relative;
+            top: 56px;
+            width: 100%;
+
+            .info {
+                height: 76%;
+                position: absolute;
+                right: 0;
+                width: 66%;
+
+                .dats {
+                    margin: 0;
+                    padding: 30px 0;
+
+                    li {
+                        display: block;
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .description {
+                        @include fonts( $white, $italic, 20 );
+                        font-size: 16px;
+                        margin: 0 auto;
+                        text-align: center;
+                        width: 385px;
+
+                        strong {
+                            font-family: $italicb;
+                            font-size: 17px;
+                        }
+                    }
+
+                    .others {
+                        ul {
+                            margin: 0;
+                            padding: 0;
+
+                            li {
+                                display: inline-block;
+
+                                img {
+                                    width: 120px;
+                                }
+                            }
+                        }
+
+                        .more {
+                            @include fonts($white, $medium, 20);
+                            cursor: pointer;
+                            font-size: 20px;
+                            text-align: center;
+                            position: relative;
+
+                            &:before {
+                                content: '';
+                                background: $white;
+                                height: 2px;
+                                width: 20%;
+                            }
+                        }
+                    }
+                }
+
+                .ico-ppal {
+                    img {
+                        left: -415px;
+                        position: absolute;
+                        top: -33px;
+                        width: 468px;
+                        z-index: 9;
+                    }
+                }
+
+                .title {
+                    @include fonts( $white, $alternate, 55px );
+                    font-size: 42px;
+                    line-height: 45px;
+                    left: 38px;
+                    text-align: center;
+                    position: relative;
+                    top: 22px;
+                }
+            }
+
+            .left {
+                left: 0;
+
+                .ico-ppal {
+                    img { left: initial; right: -415px; }
+                }
+
+                .title {
+                    left: -50px;
+                }
+            }
+        }
+
+        .products-title {
+            background: #22e0c9;
+            height: 200px;
+            position: relative;
+            text-align: center;
+            top: 70px;
+            width: 100%;
+
+            h1 {
+                @include fonts( $white, $light, 60px );
+                font-size: 60px;
+                letter-spacing: 4px;
+                position: relative;
+                top: 71px;
+
+                strong { @include fonts( $white, $regular, 60px ); font-size: 60px; }
+            }
+        }
+    }
+
+    #registro {
+        .modal-dialog {
+            margin: 137px auto;
+            text-align: center;
+
+            .modal-content {
+                margin: 0 auto;
+                width: 600px;
+
+                background: #6a8bd2; /* Old browsers */
+                background: -moz-linear-gradient(left, #6a8bd2 0%, #7a4eff 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(left, #6a8bd2 0%,#7a4eff 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right, #6a8bd2 0%,#7a4eff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a8bd2', endColorstr='#7a4eff',GradientType=1 ); /* IE6-9 */
+
+                form {
+                    input[type="email"] {
+                        @include fonts( #848484, $light, 20px );
+                        font-size: 18px;
+                        border: none;
+                        border-radius: 8px;
+                        height: 42px;
+                        text-align: center;
+                    }
+
+                    input[type="submit"] {
+                        @include fonts( $white, $light, 20px );
+                        background: #c8e25a;
+                        border: none;
+                        border-radius: 8px;
+                        font-size: 18px;
+                        margin-top: 27px;
+                        padding: 7px 20px;
+                    }
+                }
+
+                .text-modal {
+                    @include fonts( $white, $light, 20px );
+                    font-size: 20px;
+                    margin: 34px auto;;
+                    text-align: left;
+                    width: 54%;
+                }
+
+                .title-modal {
+                    @include fonts( $white, $medium, 20px );
+                    font-size: 35px;
+                    letter-spacing: 4px;
+                }
+            }
+
+            .modal-header {
+                border: none;
+            }
+        }
+    }
+
+    #tiempo {
+        padding-top: 62px;
+        position: relative;
+
+        .bg {
+            background: url('#{$bg}fondo-tiempoparami.png') center repeat fixed 100%;
+            text-align: center;
+            margin: 50px auto 40px;
+            width: 90%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .ico { position: absolute; z-index: 999; transition: all .2s cubic-bezier(0, 0, 0.43, 0.88); }
+
+        .time-content {
+            background: #ff9a2c;
+            padding: 28px 0;
+            position: relative;
+
+            .time-dats {
+                margin: 0 auto;
+                padding-top: 50px;
+
+                ul {
+                    margin: 25px 0 0 10px;
+
+                    padding: 0;
+
+                    li {
+                        display: inline-block;
+                        margin: 0 20px;
+                        padding: 0;
+
+                        .more,
+                        a {
+                            @include fonts( $white, $medium, 18 );
+                            cursor: pointer;
+                            font-size: 18px;
+
+                            img {
+                                width: 30px;
+                            }
+                        }
+                    }
+                }
+
+                .description {
+                    @include fonts( $white, $light, 18px );
+                    font-size: 18px;
+                    margin: 30px 0 0 30px;
+                    text-align: justify;
+                    width: 70%;
+                }
+
+                .note {
+                    @include fonts( $white, $light, 17 );
+                    background-color: #7f388d;
+                    bottom: -29%;
+                    height: auto;
+                    font-size: 16px;
+                    padding: 15px;
+                    position: absolute;
+                    right: -15px;
+                    width: 90%;
+                }
+
+                .title {
+                    @include fonts( $white, $light, 75 );
+                    font-size: 75px;
+                    line-height: 47px;
+
+                    small  {
+                        font-size: 35px;
+
+                        strong {
+                            font-size: 35px;
+                        }
+                    }
+
+                    strong { @include fonts( $white, $medium, 75 ); font-size: 75px; }
+                }
+            }
+
+            .ico { position: absolute; z-index: 999; transition: all .2s cubic-bezier(0, 0, 0.43, 0.88); }
+
+            .img {
+                text-align: center;
+                img { margin: 0 auto; width: 85%; }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+#main-menu {
+    position: absolute;
+    right: 8%;
+    top: 40px;
+
+    #menu-main-menu {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            list-style: none;
+            margin: 0 0 0 26px;
+            padding: 0;
+
+            a {
+                @include fonts( $white, $regularm, 17 );
+                font-size: 17px;
+                letter-spacing: .8px;
+                position: relative;
+                transition: all .2s linear;
+
+                &:after {
+                    background-color: #479aa5;
+                    bottom: -4px;
+                    content: '';
+                    color: #479aa5;
+                    height: 2px;
+                    left: 0;
+                    position: absolute;
+                    width: 0%;
+                    transition: all .2s linear;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    color: #479aa5;
+
+                    &:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .face {
+            background: url('#{$ico}/fb-c.png') no-repeat center;
+
+            a {
+                img {
+                    position: relative;
+                    transition: all .2s linear;
+                }
+
+                &:after {
+                    content: none;
+                    width: 0 !important;
+                }
+            }
+
+            &:hover {
+                a {
+                    img { opacity: 0; }
+                }
+            }
+        }
+    }
+}

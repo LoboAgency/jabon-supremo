@@ -1,0 +1,60 @@
+footer {
+    hr {
+        background-color: #a5a5a547;
+        margin: 0 0 36px 0;
+        height: 25px;
+        width: 100%;
+    }
+
+    .dats {
+        .dats-content {
+            @include fonts( #a5a5a5, $mediumr, 15px );
+            font-size: 14px;
+            margin-top: 13px;
+
+            a { color: #a5a5a5; }
+
+            span {
+                font-size: 12px;
+            }
+        }
+
+        .dats-title {
+            @include fonts( #a5a5a5, $mediumr, 25 );
+            font-size: 21px;
+            margin: 0;
+            position: relative;
+            width: 44%;
+
+            &:after {
+                content: '';
+                height: 1px;
+                background-color: #a5a5a5;
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                width: 100%;
+            }
+        }
+
+        .ico {
+            left: -45px;
+            position: absolute;
+
+            img { width: 25px; }
+        }
+    }
+
+    .logo-cala {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+        background: #e6e6e6;
+        padding: 13px 0;
+
+        img {
+            margin: 0 auto;
+            width: 95px;
+        }
+    }
+}

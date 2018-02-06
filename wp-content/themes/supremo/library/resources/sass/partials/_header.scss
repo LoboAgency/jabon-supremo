@@ -1,0 +1,57 @@
+header {
+    background-color: transparent;
+    padding: 0 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+    .bar {
+        background-color: rgba(213, 217, 218, 0.85);
+        height: 0;
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        transition: all .2s linear easeInOut;
+    }
+
+    .ico {
+        position: relative;
+        top: 25px;
+
+        a {
+            img { width: 127px; }
+        }
+    }
+
+    .ico-nav {
+        position: absolute;
+        top: 15px;
+        right: 5%;
+    }
+
+    .second {
+        top: -22px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .2s linear;
+
+        a {
+            .logo {
+                width: 142px;
+                position: relative;
+                left: -5px;
+                top: -6px;
+            }
+        }
+    }
+
+    &:hover {
+        .bar { height: 97px !important; }
+
+        .second {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
